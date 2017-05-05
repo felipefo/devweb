@@ -1,9 +1,8 @@
 language: node_js
 node_js:
-- 6
-
+ - 6
 before_script:
-  - npm install -g cluster
-  - npm install -g cluster-node-cache
-  - npm install -g os
+ - npm install -g cluster
+ - npm install -g cluster-node-cache
+ - npm install -g os
   

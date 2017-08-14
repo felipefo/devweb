@@ -1,0 +1,187 @@
+<html>
+<body onload="inicializacao()">
+
+<SCRIPT>
+// JavaScript File
+
+function inicializacao(){
+	var visao = new AtividadeVisao();	
+	visao.carregarTudo();
+}
+	
+
+
+function Atividade( descricao, istatus, id){    						
+	this.tiposStatus = { "aFazer" : 0 , "concluido" : 1};	
+	this.descricaoStatus =[ "A fazer" , "Concluido"];				
+    if(arguments.length  == 2){
+	  
+      this.id = Math.floor(Math.random() * 1000000000);
+	  this.descricao = descricao;	  
+	  this.status = istatus;
+	  console.log(this.status);
+		
+    }else if(arguments.length  == 3){
+		this.id = id;	
+		this.descricao = descricao;
+		this.status = istatus;		
+	}        	
+	this.toAtividade  = function (jsonObject){	
+		var atividadeJSON = JSON.parse(jsonObject);
+	    var atividade = new Atividade(atividadeJSON.descricao, atividadeJSON.status, atividadeJSON.id);
+		return atividade;
+	}
+	
+	this.getStatus = function (){
+		return this.descricaoStatus[this.status];
+	}
+		
+	this.toString = function (){	
+		var atividadeJSON = {"status": this.status, "descricao": this.descricao, "id": this.id };
+		return JSON.stringify(atividadeJSON);	
+	};	
+	    
+}
+
+function AtividadePersistencia(){
+
+	this.limpar = function(){	
+		localStorage.clear();	 
+	}
+
+	this.salvar =  function(atividade){				
+		localStorage.setItem(atividade.id , atividade);	
+	}
+	this.recuperar =  function(id){			
+		console.log("Recuperando objeto com id:" + localStorage.getItem(id));
+		var jsonObject = localStorage.getItem(id);		
+		var atividade = new Atividade();
+		//convertendo um string em um objeto novamente
+		console.log(jsonObject);
+		atividade = atividade.toAtividade(jsonObject);		
+		console.log("Atividade recuperada:" + atividade.toString()); 
+		return atividade;		
+	}	
+	this.listarTodos =  function(){			
+		var lista = new Array();
+		var atividadestat = new Atividade();
+		for(var key in localStorage) {
+			var jsonObject = localStorage.getItem(key);						
+			var atividade = atividadestat.toAtividade(jsonObject);			
+			lista.push(atividade);
+		}	
+		return lista;
+	}		
+	this.listarTodosPorTipo =  function(tipoStatus){					
+		var lista = new Array();
+		var atividadestat = new Atividade();
+		for(var key in localStorage) {
+			var jsonObject = localStorage.getItem(key);
+			var atividade = atividadestat.toAtividade(jsonObject);			
+			lista.push(atividade);
+		}				
+		var listaAtividades = lista.filter(function(atividade) {
+			return atividade.status == tipoStatus;
+		});
+		return listaAtividades;		
+	}	
+	this.listarTodosConcluidos = function(){
+		var atividade = new Atividade();		
+		return this.listarTodosPorTipo(atividade.tiposStatus.concluido);		
+	}	
+	this.listarTodosAFazer = function(){			
+		var atividade = new Atividade();
+		return this.listarTodosPorTipo(atividade.tiposStatus.aFazer);		
+	}	
+}
+
+function AtividadeVisao(){
+	
+	this.persistencia = new AtividadePersistencia();	
+
+	this.limpar = function (){
+		var lista = document.getElementById("listaAtividades");
+		lista.innerHTML = "";
+	}
+	
+	this.carregarTudo = function (){
+		this.limpar();
+		this.adicionarListaAfazer();
+		this.adicionarListaConcluidas();
+		
+	}
+	
+	this.adicionarListaConcluidas = function(){
+		
+		var listas = this.persistencia.listarTodosConcluidos();		
+		var lista = document.getElementById("listaAtividades");
+		var listaInputs = lista.innerHTML ;
+		console.log(listas);
+		for(var key in listas) {
+			console.log(key);
+			var atividade = listas[key];	
+			var input = '<input type="checkbox" onclick="atualizar(this);" id="'  + atividade.id +  '" name="concluido" value="' +  atividade.descricao + '" checked>'  + atividade.descricao + '<br>';
+			listaInputs += input;	
+		}
+		lista.innerHTML = listaInputs;	
+	}
+	this.adicionarListaAfazer = function(aFazer){
+		var listas = this.persistencia.listarTodosAFazer();
+		var lista = document.getElementById("listaAtividades");
+		var listaInputs = lista.innerHTML ;
+		console.log(listas);
+		for(var key in listas) {		
+			console.log(key);
+			var atividade = listas[key];
+			console.log(atividade);
+			var input = '<input type="checkbox" onclick="atualizar(this);" id="'  + atividade.id +  '" name="afazer" value="' +  atividade.descricao + '">'  + atividade.descricao + '<br>';
+			listaInputs += input;	
+		}
+		lista.innerHTML = listaInputs;	
+	}
+}
+
+function limparTudo(){
+	var persistencia = new AtividadePersistencia();
+	var visao = new AtividadeVisao();
+	persistencia.limpar();	
+	visao.limpar();
+	
+}
+
+function adicionarAtividade(){
+
+	var persistencia = new AtividadePersistencia();
+	var tipo  = new Atividade();
+	var inputAtividade = document.getElementById("atividade").value;
+	var atividade = new Atividade(inputAtividade, tipo.tiposStatus.aFazer);
+	persistencia.salvar(atividade);
+	var visao = new AtividadeVisao();	
+	visao.carregarTudo();
+	document.getElementById("atividade").value = "";	
+}
+
+function atualizar(input){
+
+	var persistencia= new AtividadePersistencia();
+	if (input.checked){	
+		var atividade = new Atividade(input.value, 1, input.id,);
+		persistencia.salvar(atividade);				
+	}else{
+		var atividade = new Atividade( input.value, 0, input.id);
+		persistencia.salvar(atividade);				
+	}
+	
+}
+
+
+
+</script>
+
+<input type="text" name="descricao" id="atividade"><br>
+<div id="listaAtividades"></div>
+<button type="button" onclick="limparTudo();" >Limpar</button>
+<button type="button" onclick="adicionarAtividade();" >Adicionar Atividade</button>
+
+</body>
+</html>

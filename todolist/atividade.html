@@ -11,21 +11,17 @@ function inicializacao(){
 	
 
 
-function Atividade( descricao, istatus, id){    						
+function Atividade( descricao, status, id){    						
 	this.tiposStatus = { "aFazer" : 0 , "concluido" : 1};	
 	this.descricaoStatus =[ "A fazer" , "Concluido"];				
-    if(arguments.length  == 2){
-	  
-      this.id = Math.floor(Math.random() * 1000000000);
-	  this.descricao = descricao;	  
-	  this.status = istatus;
-	  console.log(this.status);
-		
-    }else if(arguments.length  == 3){
-		this.id = id;	
-		this.descricao = descricao;
-		this.status = istatus;		
-	}        	
+    
+	this.id = id;	
+	this.descricao = descricao;
+	this.status = status;		
+	if(arguments.length  == 2){
+        this.id = Math.floor(Math.random() * 1000000000);
+    }
+	
 	this.toAtividade  = function (jsonObject){	
 		var atividadeJSON = JSON.parse(jsonObject);
 	    var atividade = new Atividade(atividadeJSON.descricao, atividadeJSON.status, atividadeJSON.id);

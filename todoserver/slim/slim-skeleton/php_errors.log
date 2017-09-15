@@ -1,0 +1,210 @@
+[05-Sep-2017 19:05:31 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/slim/slim-skeleton/src/routes.php on line 64
+[05-Sep-2017 19:05:31 UTC] PHP Stack trace:
+[05-Sep-2017 19:05:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:05:35 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/slim/slim-skeleton/src/routes.php on line 64
+[05-Sep-2017 19:05:35 UTC] PHP Stack trace:
+[05-Sep-2017 19:05:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:35:15 UTC] PHP Fatal error:  Class 'Tarefa\TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 35
+[05-Sep-2017 19:35:15 UTC] PHP Stack trace:
+[05-Sep-2017 19:35:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:35:15 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:35:15 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:35:15 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:35:15 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:35:15 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:35:15 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:35:15 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:35:15 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:35:15 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:35:15 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:35:15 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:35:15 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:35:15 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:35:15 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:34-36}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:36:32 UTC] PHP Fatal error:  Class 'Tarefa\TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 35
+[05-Sep-2017 19:36:32 UTC] PHP Stack trace:
+[05-Sep-2017 19:36:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:36:32 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:36:32 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:36:32 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:36:32 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:36:32 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:36:32 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:36:32 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:36:32 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:36:32 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:36:32 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:36:32 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:36:32 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:36:32 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:36:32 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:34-36}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:37:30 UTC] PHP Fatal error:  Class 'Tarefa\TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 35
+[05-Sep-2017 19:37:30 UTC] PHP Stack trace:
+[05-Sep-2017 19:37:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:37:30 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:37:30 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:37:30 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:37:30 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:37:30 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:37:30 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:37:30 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:37:30 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:37:30 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:37:30 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:37:30 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:37:30 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:37:30 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:37:30 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:34-36}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:38:08 UTC] PHP Fatal error:  Class 'Tarefa\TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 35
+[05-Sep-2017 19:38:08 UTC] PHP Stack trace:
+[05-Sep-2017 19:38:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:38:08 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:38:08 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:38:08 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:38:08 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:38:08 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:38:08 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:38:08 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:38:08 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:38:08 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:38:08 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:38:08 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:38:08 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:38:08 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:38:08 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:34-36}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:38:35 UTC] PHP Fatal error:  Class 'TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 34
+[05-Sep-2017 19:38:35 UTC] PHP Stack trace:
+[05-Sep-2017 19:38:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:38:35 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:38:35 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:38:35 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:38:35 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:38:35 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:38:35 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:38:35 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:38:35 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:38:35 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:38:35 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:38:35 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:38:35 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:38:35 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:38:35 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:33-35}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:38:49 UTC] PHP Fatal error:  Class 'TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 34
+[05-Sep-2017 19:38:49 UTC] PHP Stack trace:
+[05-Sep-2017 19:38:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:38:49 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:38:49 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:38:49 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:38:49 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:38:49 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:38:49 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:38:49 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:38:49 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:38:49 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:38:49 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:38:49 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:38:49 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:38:49 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:38:49 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:33-35}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:40:51 UTC] PHP Fatal error:  Class 'TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 34
+[05-Sep-2017 19:40:51 UTC] PHP Stack trace:
+[05-Sep-2017 19:40:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:40:51 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:40:51 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:40:51 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:40:51 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:40:51 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:40:51 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:40:51 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:40:51 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:40:51 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:40:51 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:40:51 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:40:51 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:40:51 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:40:51 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:33-35}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:41:00 UTC] PHP Fatal error:  Class 'TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 34
+[05-Sep-2017 19:41:00 UTC] PHP Stack trace:
+[05-Sep-2017 19:41:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:41:00 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:41:00 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:41:00 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:41:00 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:41:00 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:41:00 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:41:00 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:41:00 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:41:00 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:41:00 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:41:00 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:41:00 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:41:00 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:41:00 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:33-35}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:41:19 UTC] PHP Fatal error:  Class 'TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 34
+[05-Sep-2017 19:41:19 UTC] PHP Stack trace:
+[05-Sep-2017 19:41:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:41:19 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:41:19 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:41:19 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:41:19 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:41:19 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:41:19 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:41:19 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:41:19 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:41:19 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:41:19 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:41:19 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:41:19 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:41:19 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:41:19 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:33-35}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:50:16 UTC] PHP Fatal error:  Class 'App\Controller\TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 35
+[05-Sep-2017 19:50:16 UTC] PHP Stack trace:
+[05-Sep-2017 19:50:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:50:16 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:50:16 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:50:16 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:50:16 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:50:16 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:50:16 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:50:16 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:50:16 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:50:16 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:50:16 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:50:16 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:50:16 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:50:16 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:50:16 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:34-37}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:51:41 UTC] PHP Fatal error:  Class 'Slim\TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 35
+[05-Sep-2017 19:51:41 UTC] PHP Stack trace:
+[05-Sep-2017 19:51:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:51:41 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:51:41 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:51:41 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:51:41 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:51:41 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:51:41 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:51:41 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:51:41 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:51:41 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:51:41 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:51:41 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:51:41 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:51:41 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:51:41 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:34-37}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118
+[05-Sep-2017 19:52:05 UTC] PHP Fatal error:  Class 'Slim\Tarefa\TarefaController' not found in /home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php on line 35
+[05-Sep-2017 19:52:05 UTC] PHP Stack trace:
+[05-Sep-2017 19:52:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:0
+[05-Sep-2017 19:52:05 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/slim/slim-skeleton/public/index.php:30
+[05-Sep-2017 19:52:05 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:295
+[05-Sep-2017 19:52:05 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:370
+[05-Sep-2017 19:52:05 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:52:05 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/App.php:476
+[05-Sep-2017 19:52:05 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:316
+[05-Sep-2017 19:52:05 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:122
+[05-Sep-2017 19:52:05 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Route.php:344
+[05-Sep-2017 19:52:05 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:52:05 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/slim/slim-skeleton/src/routes.php:12-15}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[05-Sep-2017 19:52:05 UTC] PHP  12. Slim\Container->__get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:13
+[05-Sep-2017 19:52:05 UTC] PHP  13. Slim\Container->get() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:172
+[05-Sep-2017 19:52:05 UTC] PHP  14. Pimple\Container->offsetGet() /home/ubuntu/workspace/slim/slim-skeleton/vendor/slim/slim/Slim/Container.php:123
+[05-Sep-2017 19:52:05 UTC] PHP  15. {closure:/home/ubuntu/workspace/slim/slim-skeleton/src/dependencies.php:34-37}() /home/ubuntu/workspace/slim/slim-skeleton/vendor/pimple/pimple/src/Pimple/Container.php:118

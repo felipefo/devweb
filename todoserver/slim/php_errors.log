@@ -1,0 +1,6 @@
+[05-Sep-2017 18:54:16 UTC] PHP Warning:  require(/home/ubuntu/workspace/slim/slim-skeleton/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/slim/slim-skeleton/index.php on line 12
+[05-Sep-2017 18:54:16 UTC] PHP Stack trace:
+[05-Sep-2017 18:54:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/index.php:0
+[05-Sep-2017 18:54:16 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/slim/slim-skeleton/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/slim/slim-skeleton/index.php on line 12
+[05-Sep-2017 18:54:16 UTC] PHP Stack trace:
+[05-Sep-2017 18:54:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/slim/slim-skeleton/index.php:0

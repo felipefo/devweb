@@ -1,5 +1,18 @@
+<!DOCTYPE html>
 <html>
+<head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
 <body onload="inicializacao()">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
 
 <SCRIPT>
 // JavaScript File
@@ -116,7 +129,7 @@ function AtividadeVisao(){
 		for(var key in listas) {
 			console.log(key);
 			var atividade = listas[key];	
-			var input = '<input type="checkbox" onclick="atualizar(this);" id="'  + atividade.id +  '" name="concluido" value="' +  atividade.descricao + '" checked>'  + atividade.descricao + '<br>';
+			var input = '<input type="checkbox" onclick="atualizar(this);" id="'  + atividade.id +  '" name="concluido" value="' +  atividade.descricao + '" checked> <label for="' +   atividade.id + '"> ' +  atividade.descricao + '</label><br>';
 			listaInputs += input;	
 		}
 		lista.innerHTML = listaInputs;	
@@ -130,11 +143,15 @@ function AtividadeVisao(){
 			console.log(key);
 			var atividade = listas[key];
 			console.log(atividade);
-			var input = '<input type="checkbox" onclick="atualizar(this);" id="'  + atividade.id +  '" name="afazer" value="' +  atividade.descricao + '">'  + atividade.descricao + '<br>';
+			var input = '<input type="checkbox" onclick="atualizar(this);" id="'  + atividade.id +  '" name="afazer" value="' +  atividade.descricao + '">  <label for="' +   atividade.id + '"> ' +  atividade.descricao + '</label><br>';
+			 
+			 //<label for="' +   atividade.id + '"> ' +  atividade.descricao + '</label><br>';
+			 
 			listaInputs += input;	
 		}
 		lista.innerHTML = listaInputs;	
 	}
+	
 }
 
 function limparTudo(){
@@ -174,10 +191,32 @@ function atualizar(input){
 
 </script>
 
-<input type="text" name="descricao" id="atividade"><br>
+<div class="row" style="padding:10px;">
+
+ <div class="input-field col s6" >
+          <i class="material-icons prefix">work</i>
+          <input name="descricao" id="atividade" type="text" class="validate">
+          <label for="atividade">Atividade</label>
+		 
+ </div>
+ <a onclick="adicionarAtividade();"  class="waves-effect waves-light btn"><i class="material-icons left">add</i>Adicionar</a>
+ <a onclick="limparTudo();"  class="waves-effect waves-light btn"><i class="material-icons left">delete</i>Limpar tudo</a>
+ </div>
+ <div class="row">
+ 
+ 
+<!--<input type="text" name="descricao" id="atividade">-->
+
+<br>
 <div id="listaAtividades"></div>
-<button type="button" onclick="limparTudo();" >Limpar</button>
-<button type="button" onclick="adicionarAtividade();" >Adicionar Atividade</button>
+
+ 
+
+
+
+
+
+</div>
 
 </body>
 </html>

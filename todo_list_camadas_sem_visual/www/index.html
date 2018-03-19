@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>       
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="js/visao/atividadeVisao.js"></script>
+<script type="text/javascript" src="js/controle/atividadeControle.js"></script>
+<script type="text/javascript" src="js/persistencia/persistenciaLocal.js"></script>
+</head>
+<body onload="inicializacao();">
+<SCRIPT>
+    var controle = new AtividadeControle();	
+	function inicializacao(){
+		controle.atualizarLista();
+    }    
+</script>
+<h1> TODO List!</h1> 
+ <input name="descricao" id="atividade" type="text">
+ <button onclick="controle.adicionarAtividade();">Adicionar</button>
+ <button style="margin-left:20px;" onclick="controle.limparTudo();" >Limpar Tudo</button>
+<!--<input type="text" name="descricao" id="atividade">-->
+ <br>
+ <div style="padding:10px;max-width:300px;" id="listaAtividades"></div>
+</body>
+</html>

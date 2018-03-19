@@ -1,0 +1,32 @@
+<html>
+<body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<button onclick="enviar()"> Enviar </button>
+<div id="listatarefas">Lista Vazia</div>
+<script type="text/javascript">
+	pegar();
+    function enviar() {
+    var tarefa = {            
+       descricao:"Prepara aulas de desenvolvimento web",status:0,
+    }
+    $.ajax({
+      url: 'https://backendslim-felipefrechiani.c9users.io/slim-skeleton/public/tarefa',
+      type: 'post',dataType: 'json',
+      success: function (data) {
+	     alert("Salvo com sucesso");
+         pegar();
+         },data: tarefa
+        });		
+    }
+	function pegar(){
+	  $.ajax({
+      url: 'https://backendslim-felipefrechiani.c9users.io/slim-skeleton/public/tarefa',
+      type: 'get',dataType: 'json',
+       success: function (data) {					
+          document.getElementById('listatarefas').innerHTML = JSON.stringify(data);
+       },			            
+     });
+	}
+</script>
+</body>
+</html>

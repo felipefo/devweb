@@ -1,11 +1,11 @@
 
 function PersistenciaWS(persistencia){    						
 	
-	this.domain = "https://todolistcomslimphp-felipefrechiani.c9users.io/slim/slim-skeleton/public/";		
+	this.domain = "https://backendslimenodejs-felipefrechiani.c9users.io/slim-skeleton/public/";		
 	this.persistencia = persistencia;
 	this.salvar = function(atividade){
         var uuid = persistencia.getUUID();
-    	$.post( this.domain + "salvartarefa",  atividade)
+    	$.post( this.domain + "tarefa",  atividade)
     	    .done(function(msg){ 			        				
 			this.persistencia.lista.push(atividade);//guardando na lista
 			this.persistencia.listaListener.notify(this.persistencia.lista); //enviando para os observadores  					
@@ -27,7 +27,7 @@ function PersistenciaWS(persistencia){
     	});
 	}
    	this.listarTodos  = function (){	
-		$.get(this.domain + "tarefas", function(data, status){
+		$.get(this.domain + "tarefa", function(data, status){
 			persistencia.lista = data;
         	persistencia.listaListener.notify(data);
     	});

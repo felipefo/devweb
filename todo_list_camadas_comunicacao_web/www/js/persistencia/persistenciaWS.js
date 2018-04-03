@@ -16,6 +16,9 @@ function PersistenciaWS(persistencia){
             alert(xhr.responseText);
 	        }
         )
+	}		
+	this.remover = function(id){	
+		   
 	}
 	this.limpar = function(){
         var uuid = persistencia.getUUID();

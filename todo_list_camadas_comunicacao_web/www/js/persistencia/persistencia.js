@@ -13,10 +13,13 @@ function Persistencia(){
 		}
 	}
 	this.limpar = function(){	
-	        this.storage.limpar();    
+	    this.storage.limpar();    
+	}
+	this.remover = function(id){	
+	    this.storage.remover(id);    
 	}
 	this.salvar =  function(atividade){	
-	        this.storage.salvar(atividade);        
+	    this.storage.salvar(atividade);        
 	}	
 	this.listarTodos =  function(){	
 		this.lista=new Array();

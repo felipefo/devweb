@@ -20,7 +20,8 @@
 
     var controle = new AtividadeControle();	
 	function inicializacao(){
-		controle.setEstrategiaPersistenciaLocal();
+		//controle.setEstrategiaPersistenciaLocal();
+		controle.setEstrategiaPersistenciaRemota();
 		controle.atachListenerAtividadeVisaoLoadAll();
 		controle.atualizarLista();		
 		
@@ -52,7 +53,7 @@
  <div class="row">
 <!--<input type="text" name="descricao" id="atividade">-->
  <br>
- <div style="padding:10px;max-width:300px;" id="listaAtividades"></div>
+ <div style="padding:10px;max-width:400px;" id="listaAtividades"></div>
 
  </div>
  

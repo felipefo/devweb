@@ -1,7 +1,6 @@
 
 function Persistencia(){
-	this.storage;
-	this.local = false;	
+	this.storage;	
 	this.listaListener = new Event(this);
 	this.lista = new Array();
 	

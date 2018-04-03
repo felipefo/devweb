@@ -1,8 +1,6 @@
 function PersistenciaLocal(persistencia){     
     
 	this.persistencia = persistencia;
-	
-	
 	this.limpar = function(){	
 	   localStorage.clear();	     	   	   
 	   this.persistencia.lista = [];

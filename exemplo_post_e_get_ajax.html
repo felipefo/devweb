@@ -10,7 +10,7 @@
        descricao:"Prepara aulas de desenvolvimento web",status:0,
     }
     $.ajax({
-      url: 'https://backendslim-felipefrechiani.c9users.io/slim-skeleton/public/tarefa',
+      url: 'https://backendslim-felipefrechiani.c9users.io/slim/slim-skeleton/public/tarefa',
       type: 'post',dataType: 'json',
       success: function (data) {
 	     alert("Salvo com sucesso");
@@ -20,7 +20,7 @@
     }
 	function pegar(){
 	  $.ajax({
-      url: 'https://backendslim-felipefrechiani.c9users.io/slim-skeleton/public/tarefa',
+      url: 'https://backendslim-felipefrechiani.c9users.io/slim/slim-skeleton/public/tarefa',
       type: 'get',dataType: 'json',
        success: function (data) {					
           document.getElementById('listatarefas').innerHTML = JSON.stringify(data);

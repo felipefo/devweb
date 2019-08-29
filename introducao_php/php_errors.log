@@ -1,0 +1,51 @@
+[03-Aug-2018 17:57:18 UTC] PHP Fatal error:  Class 'Cliente' not found in /home/ubuntu/workspace/classes/index.php on line 4
+[03-Aug-2018 17:57:18 UTC] PHP Stack trace:
+[03-Aug-2018 17:57:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 17:57:47 UTC] PHP Fatal error:  Class 'Cliente' not found in /home/ubuntu/workspace/classes/index.php on line 4
+[03-Aug-2018 17:57:47 UTC] PHP Stack trace:
+[03-Aug-2018 17:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 17:58:18 UTC] PHP Warning:  require(meunamespace/Cliente.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 17:58:18 UTC] PHP Stack trace:
+[03-Aug-2018 17:58:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 17:58:18 UTC] PHP Fatal error:  require(): Failed opening required 'meunamespace/Cliente.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 17:58:18 UTC] PHP Stack trace:
+[03-Aug-2018 17:58:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 17:59:27 UTC] PHP Warning:  require(meunamespace): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 17:59:27 UTC] PHP Stack trace:
+[03-Aug-2018 17:59:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 17:59:27 UTC] PHP Fatal error:  require(): Failed opening required 'meunamespace' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 17:59:27 UTC] PHP Stack trace:
+[03-Aug-2018 17:59:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:01:14 UTC] PHP Fatal error:  Class 'meunamespace\Cliente' not found in /home/ubuntu/workspace/classes/index.php on line 4
+[03-Aug-2018 18:01:14 UTC] PHP Stack trace:
+[03-Aug-2018 18:01:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:02:07 UTC] PHP Fatal error:  Class 'Cliente' not found in /home/ubuntu/workspace/classes/index.php on line 4
+[03-Aug-2018 18:02:07 UTC] PHP Stack trace:
+[03-Aug-2018 18:02:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:03:07 UTC] PHP Warning:  require(model\Cliente.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 18:03:07 UTC] PHP Stack trace:
+[03-Aug-2018 18:03:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:03:07 UTC] PHP Fatal error:  require(): Failed opening required 'model\Cliente.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 18:03:07 UTC] PHP Stack trace:
+[03-Aug-2018 18:03:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:03:22 UTC] PHP Warning:  require(model\Cliente.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 18:03:22 UTC] PHP Stack trace:
+[03-Aug-2018 18:03:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:03:22 UTC] PHP Fatal error:  require(): Failed opening required 'model\Cliente.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 18:03:22 UTC] PHP Stack trace:
+[03-Aug-2018 18:03:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:03:38 UTC] PHP Warning:  require(modelo\Cliente.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 18:03:38 UTC] PHP Stack trace:
+[03-Aug-2018 18:03:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:03:38 UTC] PHP Fatal error:  require(): Failed opening required 'modelo\Cliente.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 18:03:38 UTC] PHP Stack trace:
+[03-Aug-2018 18:03:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:03:45 UTC] PHP Warning:  require(modelo\Cliente.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 18:03:45 UTC] PHP Stack trace:
+[03-Aug-2018 18:03:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:03:45 UTC] PHP Fatal error:  require(): Failed opening required 'modelo\Cliente.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/index.php on line 2
+[03-Aug-2018 18:03:45 UTC] PHP Stack trace:
+[03-Aug-2018 18:03:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0
+[03-Aug-2018 18:03:55 UTC] PHP Fatal error:  Class 'Cliente' not found in /home/ubuntu/workspace/classes/index.php on line 4
+[03-Aug-2018 18:03:55 UTC] PHP Stack trace:
+[03-Aug-2018 18:03:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/index.php:0

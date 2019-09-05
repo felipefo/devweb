@@ -6,6 +6,13 @@
 </head>    
 <body>
 <?php
+
+$teste = 5;
+$teste = "string";
+echo $teste . "<br>";
+$teste = 5;
+echo $teste;
+
 $nome = "João Alberto";
 $nome1 = $nome;
 

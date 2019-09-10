@@ -22,23 +22,20 @@ function AtividadeControle(){
 		this.persistencia.setEstrategiaPersistencia("local");			
 	}	
 	this.remover =function(id){		
-		this.persistencia.remover(id);
-		//this.atualizarLista();
+		this.persistencia.remover(id);		
 	}	
 	this.salvar =function(node){			
 		var atividade = this.atividadeVisao.getAtividade(node);
-	    var lista = this.persistencia.salvar(atividade);
-		//this.atualizarLista();
+	    var lista = this.persistencia.salvar(atividade);		
 	}	
 	this.adicionarAtividade = function(){        
 		var atividade = this.atividadeVisao.getNovaAtividade();		
 		atividade.status =0;
         this.persistencia.salvar(atividade);		
-		//this.atualizarLista();			    		
+				    	
     }    
     this.limparTudo = function(){
-        this.persistencia.limpar();
-		//this.atualizarLista();
+        this.persistencia.limpar();		
     }    	
 }
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body onload="inicializacao();">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>  
+<script type="text/javascript" src="js/visao/atividadeVisao.js"></script>
+<script type="text/javascript" src="js/persistencia/persistencia.js"></script>
+<script type="text/javascript" src="js/persistencia/persistenciaWS.js"></script>
+<script type="text/javascript" src="js/util/event.js"></script>
+<script type="text/javascript" src="js/controle/atividadeControle.js"></script>
+<script type="text/javascript" src="js/persistencia/persistenciaLocal.js"></script>
+
+<SCRIPT>
+
+    var controle = new AtividadeControle();	
+	function inicializacao(){
+		//controle.setEstrategiaPersistenciaLocal();
+		controle.setEstrategiaPersistenciaRemota();
+		controle.atachListenerAtividadeVisaoLoadAll();
+		controle.atualizarLista();		
+		
+    }
+    
+</script>
+
+<nav>
+    <div class="nav-wrapper #00796b teal darken-2">
+      <a href="#" class="brand-logo">TODO List!</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="collapsible.html">Sobre</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="row" style="padding:10px;">
+ <div class="input-field col s6" >
+      <i class="material-icons prefix">work</i>
+      <input name="descricao" id="atividade" type="text" class="validate">
+      <label for="atividade">Atividade</label>
+		 
+ </div>
+ <a onclick="controle.adicionarAtividade();"><i class="material-icons left">add</i></a>
+ <a onclick="controle.limparTudo();" ><i class="material-icons left">delete</i></a>
+
+ 
+ </div>
+ <div class="row">
+<!--<input type="text" name="descricao" id="atividade">-->
+ <br>
+ <div style="padding:10px;max-width:400px;" id="listaAtividades"></div>
+
+ </div>
+ 
+
+</body>
+</html>

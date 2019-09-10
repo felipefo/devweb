@@ -38,7 +38,7 @@ function AtividadeControle(){
     }    
     this.limparTudo = function(){
         this.persistencia.limpar();
-		//this.atualizarLista();
+		this.atualizarLista();
     }    	
 }
 

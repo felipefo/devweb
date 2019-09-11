@@ -34,6 +34,19 @@ $app->get('/tarefas', function ($request, $response, $args) {
         return $this->response->withJson($todos);
     });
     
+	$app->delete('/tarefas/[{id}]', function ($request, $response, $args) {
+        $sth = $this->db->prepare("delete FROM tarefas WHERE id=:id");
+        $sth->bindParam("id", $args['id']);
+        $sth->execute();
+       
+	    $sth = $this->db->prepare("SELECT * FROM tarefas");    
+        $sth->execute();
+        $todos = $sth->fetchAll();
+        return $this->response->withJson($todos);
+	   
+	   
+    });
+	
     
     $app->post('/tarefas', function ($request, $response) {		
         $input = $request->getParsedBody();
@@ -44,10 +57,9 @@ $app->get('/tarefas', function ($request, $response, $args) {
         $sth->bindParam("descricao", $input['descricao']);
         $sth->execute();
 		
-		$sth = $this->db->prepare("SELECT * FROM tarefas WHERE id=:id");
-        $sth->bindParam("id", $args['id']);
+		$sth = $this->db->prepare("SELECT * FROM tarefas");    
         $sth->execute();
-        $todos = $sth->fetchObject();
+        $todos = $sth->fetchAll();
         return $this->response->withJson($todos);
 		        
     });

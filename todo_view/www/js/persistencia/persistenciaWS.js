@@ -20,7 +20,7 @@ function PersistenciaWS(persistencia){
 	}	
 	
 	this.remover = function(id){	
-	    _this=this;
+	    var _this=this;
 		$.ajax({
 			url: this.domain + "tarefas/"+id,
 			method: 'DELETE',
@@ -38,17 +38,19 @@ function PersistenciaWS(persistencia){
 	}
 	this.limpar = function(){
         //var uuid = persistencia.getUUID();
+		var _this = this;
     	$.get( this.domain + "limpartarefas",  function(data, status){
-    	    this.persistencia.lista = [];
-        	this.persistencia.listaListener.notify([]);
+    	    _this.persistencia.lista = [];
+        	_this.persistencia.listaListener.notify([]);
 			
         	Materialize.toast(data, 4000);
     	});
 	}
    	this.listarTodos  = function (){	
+	    var _this = this;
 		$.get(this.domain + "tarefas", function(data, status){
-			persistencia.lista = data;
-        	persistencia.listaListener.notify(data);
+			_this.persistencia.lista = data;
+        	_this.persistencia.listaListener.notify(data);
     	});
 	}
 	

@@ -12,7 +12,7 @@ $app = new Slim\App($slimConfig);
  //Check the user is logged in when necessary.
 $loggedInMiddleware = function ($request, $response, $next) {
     
-    var_dump($request);
+    var_dump($route);
     
     $route = $request->getAttribute('route');
     $routeName = $route->getName();

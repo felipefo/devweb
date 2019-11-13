@@ -63,6 +63,8 @@ $app->post('/tasks', function ($request, $response) {
 });
 
 $app->post('/login', function ($request, $response) {
+    
+    return $app->response;
     $input = $request->getParsedBody();
 
     $sql = "select * from user where email=:email and password:=password";

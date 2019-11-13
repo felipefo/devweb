@@ -11,7 +11,7 @@ $app = new Slim\App($slimConfig);
 $loggedInMiddleware = function ($request, $response, $next) {
     
     return $this->response->withJson(var_dump($request));
-    if(strcmp($request->getPath(), "public/login") == 0 || isset($_SESSION['USER'])){
+    if(strcmp($request['REQUEST_URI'], "public/login") == 0 || isset($_SESSION['USER'])){
         $response = $next($request, $response); //cadeia de responsabilidade.
         
     }    

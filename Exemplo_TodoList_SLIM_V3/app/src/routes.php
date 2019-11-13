@@ -64,7 +64,11 @@ $app->post('/tasks', function ($request, $response) {
 
 $app->post('/login', function ($request, $response) {
     
-    return $app->response;
+    
+    $_SESSION['USER'] = $todos[0]->email;        
+    $response = $response->withRedirect('/public/www/index.html');
+    return $response;
+    
     $input = $request->getParsedBody();
 
     $sql = "select * from user where email=:email and password:=password";

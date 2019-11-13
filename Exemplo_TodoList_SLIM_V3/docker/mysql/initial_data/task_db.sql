@@ -26,3 +26,4 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+INSERT INTO user (email, password) VALUES ("felipefo@gmail.com", "password");

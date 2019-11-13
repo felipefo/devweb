@@ -65,4 +65,13 @@ $app->get('/tarefas', function ($request, $response, $args) {
     });
     
     
+    $app->group('', function () {
+	$this->get('/auth/signup', 'AuthController:getSignUp')->setName('auth.signup');
+	$this->post('/auth/signup', 'AuthController:postSignUp');
+
+	$this->get('/auth/signin', 'AuthController:getSignIn')->setName('auth.signin');
+	$this->post('/auth/signin', 'AuthController:postSignIn');
+})->add(new GuestMiddleware($container));
+    
+    
 //});

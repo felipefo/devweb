@@ -13,7 +13,7 @@ function PersistenciaWS(persistencia){
 	  		alert("Criado com sucesso") }
 	  	    )
         .fail(function(xhr, status, error) {
-            alert("alguma falha");
+        
             alert(xhr.responseText);
 	        }
         )

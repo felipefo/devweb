@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body onload="inicializacao();">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/visao/atividadeVisao.js"></script>
+<script type="text/javascript" src="js/persistencia/persistencia.js"></script>
+<script type="text/javascript" src="js/persistencia/persistenciaWS.js"></script>
+<script type="text/javascript" src="js/util/event.js"></script>
+<script type="text/javascript" src="js/controle/atividadeControle.js"></script>
+<script type="text/javascript" src="js/persistencia/persistenciaLocal.js"></script>
+
+<SCRIPT>
+
+    var controle = new AtividadeControle();	
+	function inicializacao(){
+		controle.setEstrategiaPersistenciaLocal();
+		//controle.setEstrategiaPersistenciaRemota();
+		controle.atachListenerAtividadeVisaoLoadAll();
+		controle.atualizarLista();		
+		
+    }
+    
+</script>
+
+<nav>
+    <div>
+      <a href="#">TODO List!</a>
+      <ul>
+        <li><a href="sobre.html">Sobre</a></li>
+		<li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="row" style="padding:10px;">
+      <input name="descricao" id="atividade" placeholder="Atividade" type="text" class="validate">
+ <input type="button" value="Adicionar" onclick="controle.adicionarAtividade();"></input>
+ <input type="button" value="Limpar" onclick="controle.limparTudo();" ></input>
+
+ 
+ </div>
+ <div class="row">
+<!--<input type="text" name="descricao" id="atividade">-->
+ <br>
+ <div style="padding:10px;max-width:400px;" id="listaAtividades"></div>
+ </div>
+ 
+
+</body>
+</html>

@@ -25,7 +25,7 @@ $loggedInMiddleware = function ($request, $response, $next) {
         'register',
         'forgot-password',
         'register-post',
-        'tarefas'
+        'public/tarefas'
     );
 
     

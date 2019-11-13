@@ -28,7 +28,7 @@ $loggedInMiddleware = function ($request, $response, $next) {
         'public/tarefas'
     );
 
-    var_dump($publicRoutesArray);
+    var_dump($routeName);
     if (!in_array($routeName, $publicRoutesArray))
     //if (!isset($_SESSION['USER']) && !in_array($routeName, $publicRoutesArray))
     {

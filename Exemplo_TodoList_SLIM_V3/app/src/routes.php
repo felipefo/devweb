@@ -128,7 +128,4 @@ $app->get('/login', function (Slim\Http\Request $request, \Slim\Http\Response $r
     return $homeController->index();
 })->setName('login');
 
-...
-
-    
 //});

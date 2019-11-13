@@ -12,7 +12,7 @@ $loggedInMiddleware = function ($request, $response, $next) {
     $uri = $request->getUri();
     $path  = $uri->getPath();
     
-    return $this->response->withJson();
+    return $this->response->withJson($path);
     if(strcmp($path, "public/login") == 0 || isset($_SESSION['USER'])){
         $response = $next($request, $response); //cadeia de responsabilidade.
         

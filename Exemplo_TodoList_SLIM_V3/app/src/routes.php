@@ -68,10 +68,6 @@ $app->get('/tarefas', function ($request, $response, $args) {
 
 $slimSettings = array('determineRouteBeforeAppMiddleware' => true);
 
-if (ENVIRONMENT === 'dev')
-{
-    $slimSettings['displayErrorDetails'] = true;
-}
 
 $slimConfig = array('settings' => $slimSettings);
 $app = new Slim\App($slimConfig);

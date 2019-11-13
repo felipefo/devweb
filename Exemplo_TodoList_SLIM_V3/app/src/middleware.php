@@ -13,7 +13,7 @@ $loggedInMiddleware = function ($request, $response, $next) {
     if (!isset($_SESSION['USER']))
     {
         // redirect the user to the login page and do not proceed.
-        //$response = $response->withRedirect('/login');
+        $response = $response->withRedirect('/public/www/login.html');
     }
     else
     {

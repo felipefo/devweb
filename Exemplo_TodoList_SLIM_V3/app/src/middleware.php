@@ -28,12 +28,12 @@ $loggedInMiddleware = function ($request, $response, $next) {
         'public/tarefas'
     );
 
-    
+    var_dump($publicRoutesArray);
     if (!in_array($routeName, $publicRoutesArray))
     //if (!isset($_SESSION['USER']) && !in_array($routeName, $publicRoutesArray))
     {
         // redirect the user to the login page and do not proceed.
-        $response = $response->withRedirect('/login');
+        //$response = $response->withRedirect('/login');
     }
     else
     {

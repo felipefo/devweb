@@ -15,7 +15,7 @@ $loggedInMiddleware = function ($request, $response, $next) {
    
     
     $route = $request->getAttribute('route');
-    var_dump($route);    
+    //var_dump($route);    
     $routeName = $route->getName();
     var_dump($routeName);    
     $groups = $route->getGroups();

@@ -78,7 +78,7 @@ $app->post('/login', function ($request, $response) {
     $todos = $sth->fetchAll();
     if(count($todos)>0){
         $_SESSION['USER'] = $todos[0]->email;        
-        return $this->response;
+         $response = $response->withRedirect('/public/www/index.html');
     }
     else{  
         $app->response->setStatus(400);   

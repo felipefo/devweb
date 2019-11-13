@@ -9,18 +9,14 @@ $app = new Slim\App($slimConfig);
 
  //Check the user is logged in when necessary.
 $loggedInMiddleware = function ($request, $response, $next) {
-                       
-    if (!isset($_SESSION['USER']))
-    {
+    
+    if($request.getPath() == "public/login" || isset($_SESSION['USER'])){
+        $response = $next($request, $response); //cadeia de responsabilidade.
+    }    
+    else {
         // redirect the user to the login page and do not proceed.
         $response = $response->withRedirect('/public/www/login.html');
     }
-    else
-    {
-         // Proceed as normal...
-        $response = $next($request, $response); //cadeia de responsabilidade.
-    }
-
     return $response;
 };
 

@@ -8,5 +8,5 @@ RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer	
 	
 WORKDIR /var/www/html/app_v1
-COPY composer.json composer.lock ./
+COPY ../composer.json ../composer.lock ./
 RUN composer install

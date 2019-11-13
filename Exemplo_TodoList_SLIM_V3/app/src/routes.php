@@ -17,17 +17,17 @@ $app->add(function ($req, $res, $next) {
                     ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
 });
 
-$app->get('/tarefas', function ($request, $response, $args) {
+$app->get('/tasks', function ($request, $response, $args) {
     header("Access-Control-Allow-Origin: *");
-    $sth = $this->db->prepare("SELECT * FROM tarefas");
+    $sth = $this->db->prepare("SELECT * FROM task");
     $sth->execute();
     $todos = $sth->fetchAll();
     return $this->response->withJson($todos);
 });
 
 
-$app->get('/tarefas/[{id}]', function ($request, $response, $args) {
-    $sth = $this->db->prepare("SELECT * FROM tarefas WHERE id=:id");
+$app->get('/tasks/[{id}]', function ($request, $response, $args) {
+    $sth = $this->db->prepare("SELECT * FROM task WHERE id=:id");
     $sth->bindParam("id", $args['id']);
     $sth->execute();
     $todos = $sth->fetchObject();
@@ -36,27 +36,27 @@ $app->get('/tarefas/[{id}]', function ($request, $response, $args) {
 
 
 
-$app->delete('/tarefas/[{id}]', function ($request, $response, $args) {
-    $sth = $this->db->prepare("delete FROM tarefas WHERE id=:id");
+$app->delete('/tasks/[{id}]', function ($request, $response, $args) {
+    $sth = $this->db->prepare("delete FROM task WHERE id=:id");
     $sth->bindParam("id", $args['id']);
     $sth->execute();
 
-    $sth = $this->db->prepare("SELECT * FROM tarefas");
+    $sth = $this->db->prepare("SELECT * FROM task");
     $sth->execute();
     $todos = $sth->fetchAll();
     return $this->response->withJson($todos);
 });
 
-$app->post('/tarefas', function ($request, $response) {
+$app->post('/tasks', function ($request, $response) {
     $input = $request->getParsedBody();
 
-    $sql = "INSERT INTO tarefas (descricao, status) VALUES (:descricao,:status )";
+    $sql = "INSERT INTO task (description, status) VALUES (:description,:status )";
     $sth = $this->db->prepare($sql);
     $sth->bindParam("status", $input['status']);
-    $sth->bindParam("descricao", $input['descricao']);
+    $sth->bindParam("description", $input['description']);
     $sth->execute();
 
-    $sth = $this->db->prepare("SELECT * FROM tarefas");
+    $sth = $this->db->prepare("SELECT * FROM task");
     $sth->execute();
     $todos = $sth->fetchAll();
     return $this->response->withJson($todos);
@@ -65,10 +65,9 @@ $app->post('/tarefas', function ($request, $response) {
 $app->post('/login', function ($request, $response) {
     $input = $request->getParsedBody();
 
-    $sql = "select  * from user where email=:email and password:=password";
+    $sql = "select * from user where email=:email and password:=password";
     $sth = $this->db->prepare($sql);
-    $sth->bindParam("email", $input['email']);
-    
+    $sth->bindParam("email", $input['email']);    
     $options = [
     'cost' => 11,
     'salt' => mcrypt_create_iv(22, MCRYPT_DEV_URANDOM),

@@ -1,14 +1,6 @@
 <?php
 // Routes
 
-/*
-$app->get('/[{name}]', function ($request, $response, $args) {
-   if($args['userid'] == "tarefas"){
-   }
-    return $this->renderer->render($response, 'index.phtml', $args);
-});*/
-
-
 $app->get('/tarefas', function ($request, $response, $args) {
         $sth = $this->db->prepare("SELECT * FROM tarefas");
         $sth->execute();

@@ -1,18 +1,18 @@
 
 
-#Para rodar a aplicação:
+Para rodar a aplicação:
 
-''Porta mysql  3306
-''Apache 80
+mysql  3306
+Apache 80
 
 cd docker
 
-''docker-compose up -d 
-#Rodar do serviço 
+docker-compose up -d 
+Rodar do serviço 
 
-''http://localhost/public/www/index.html
+http://localhost/public/www/index.html
 
 
 
-''POST, GET
-''http://localhost/public/tarefas 
+POST, GET
+http://localhost/public/tarefas 

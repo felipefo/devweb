@@ -16,3 +16,6 @@ http://localhost/public/www/index.html
 
 POST, GET
 http://localhost/public/tarefas 
+
+Banco de dados inicial em:
+docker/mysql/initial_data/

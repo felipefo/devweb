@@ -11,6 +11,9 @@ $app = new Slim\App($slimConfig);
 
  //Check the user is logged in when necessary.
 $loggedInMiddleware = function ($request, $response, $next) {
+    
+    var_dump($request);
+    
     $route = $request->getAttribute('route');
     $routeName = $route->getName();
     $groups = $route->getGroups();
@@ -28,7 +31,7 @@ $loggedInMiddleware = function ($request, $response, $next) {
         'public/tarefas'
     );
 
-    var_dump($routeName);
+   
     if (!in_array($routeName, $publicRoutesArray))
     //if (!isset($_SESSION['USER']) && !in_array($routeName, $publicRoutesArray))
     {

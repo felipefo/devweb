@@ -11,7 +11,7 @@ RUN mv composer.phar /usr/local/bin/composer
 	
 WORKDIR /var/www/html/app_v1
 
-COPY ["composer.json"]	
+COPY ["composer.json", "."]	
 
 COPY /root/devweb/devweb/Exemplo_TodoList_SLIM_V3/app/app_v1/composer.json ./
 RUN composer install

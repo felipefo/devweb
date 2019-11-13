@@ -4,7 +4,7 @@ use Respect\Validation\Validator as v;
 
 session_start();
 
-require __DIR__ . '../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 try {
 	$dotenv = (new \Dotenv\Dotenv(__DIR__ . '/../'))->load();

@@ -10,7 +10,7 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ../app:/var/www/html
+      - ../app_v1:/var/www/html
     depends_on:
       - mysql
     links:

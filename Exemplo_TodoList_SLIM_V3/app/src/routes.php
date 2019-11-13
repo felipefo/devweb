@@ -64,11 +64,7 @@ $app->get('/tarefas', function ($request, $response, $args) {
 		        
     });
 
-
-
 $slimSettings = array('determineRouteBeforeAppMiddleware' => true);
-
-
 $slimConfig = array('settings' => $slimSettings);
 $app = new Slim\App($slimConfig);
 
@@ -87,7 +83,8 @@ $loggedInMiddleware = function ($request, $response, $next) {
         'post-login',
         'register',
         'forgot-password',
-        'register-post'
+        'register-post',
+        'tarefas'
     );
 
     if (!isset($_SESSION['USER']) && !in_array($routeName, $publicRoutesArray))
@@ -105,7 +102,7 @@ $loggedInMiddleware = function ($request, $response, $next) {
 };
 
 // Apply the middleware to every request.
-$app->add($loggedInMiddleware);
+//$app->add($loggedInMiddleware);
 
 
 // Define app routes

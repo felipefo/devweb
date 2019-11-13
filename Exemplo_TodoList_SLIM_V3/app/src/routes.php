@@ -68,17 +68,17 @@ $app->post('/login', function ($request, $response) {
     $sql = "select * from user where email=:email and password:=password";
     $sth = $this->db->prepare($sql);
     $sth->bindParam("email", $input['email']);    
-    $options = [
+   /* $options = [
     'cost' => 11,
     'salt' => mcrypt_create_iv(22, MCRYPT_DEV_URANDOM),
-    ];
+    ];*/
     $passwd = password_hash($input['password'], PASSWORD_BCRYPT, $options);    
-    $sth->bindParam("password", $passwd);
+    $sth->bindParam("password", $input['password']);
     $sth->execute();
     $todos = $sth->fetchAll();
     if(count($todos)>0){
         $_SESSION['USER'] = $todos[0]->email;        
-         $response = $response->withRedirect('/public/www/index.html');
+        $response = $response->withRedirect('/public/www/index.html');
     }
     else{  
         $app->response->setStatus(400);   

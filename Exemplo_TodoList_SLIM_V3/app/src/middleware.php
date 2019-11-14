@@ -9,11 +9,13 @@ $app = new Slim\App($slimConfig);
 
  //Check the user is logged in when necessary.
 $loggedInMiddleware = function ($request, $response, $next) {
+    session_start();    
     $uri = $request->getUri();
     $path  = $uri->getPath(); 
     
     //return $this->response->withJson($_SESSION['USER']);
-    if(strcmp($path, "login") == 0 || null !== $session->get('user')){
+    //if(strcmp($path, "login") == 0 ||
+    if(isset($_SESSION['USER'])){
         $response = $next($request, $response); //cadeia de responsabilidade.        
     }    
     else {

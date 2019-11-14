@@ -63,10 +63,9 @@ $app->post('/tasks', function ($request, $response) {
 });
 
 $app->post('/login', function ($request, $response) {
+       
     
-    $session = new Session();
-    $session->set('user', "felipefo@gmail.com");
-    
+    $_SESSION['USER'] = "felipefo@gmail.com";    
     $app->responsewithRedirect('/public/www/index.html');
     //return $response;
     

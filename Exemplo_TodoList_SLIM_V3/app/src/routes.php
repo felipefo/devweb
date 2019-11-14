@@ -9,6 +9,15 @@
   return $this->renderer->render($response, 'index.phtml', $args);
   }); */
 
+$configuration = [
+    'settings' => [
+        'displayErrorDetails' => true,
+    ],
+];
+$c = new \Slim\Container($configuration);
+$app = new \Slim\App($c);
+
+
 $app->add(function ($req, $res, $next) {
     $response = $next($req, $res);
     return $response

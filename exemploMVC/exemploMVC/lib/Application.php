@@ -6,6 +6,7 @@ function spl_autoload_register($st_class)
 }
 
 
+
 /**
 * @package Exemplo simples com MVC
 * @author DigitalDev

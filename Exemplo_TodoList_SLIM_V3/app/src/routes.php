@@ -9,6 +9,11 @@
   return $this->renderer->render($response, 'index.phtml', $args);
   }); */
 
+
+$app = new \Slim\Slim(array(
+    'debug' => true
+));
+
 $configuration = [
     'settings' => [
         'displayErrorDetails' => true,

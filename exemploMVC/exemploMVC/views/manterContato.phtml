@@ -1,0 +1,50 @@
+<?php
+$v_params = $this->getParams();
+$o_contato = $v_params['o_contato'];
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>
+		Agenda Telef&ocirc;nica - Exemplo de MVC com PHP
+	</title>
+	<link rel="stylesheet" type="text/css" href="template/css/default.css" />
+</head>
+<body>
+	<div align="center">
+		<form method='post'>
+		<table class='table_list' width="300">
+			<tr>
+				<th>
+					Nome
+				</th>
+				<th>
+					E-mail
+				</th>
+				<th colspan="2">
+					A&ccedil;&otilde;es
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<input type='text' name='st_nome' value='<?php echo $o_contato->getNome()?>'> 
+				</td>
+				<td>
+					<input type='text' name='st_email' value='<?php echo $o_contato->getEmail()?>'>
+				</td>				
+				<td align="center">
+					<a href='?controle=Contato&acao=listarContato' class='bt_red'>Cancelar</a>
+				</td>
+				<td align="center">
+					<input type='hidden' name='controle' value='Contato'>
+					<input type='hidden' name='acao' value='manterContato'>
+					<input type='hidden' name='in_con' value='<?php echo $o_contato->getId()?>'>
+					<button type='submit' class='bt_green'>Salvar</button>
+				</td>
+			</tr>			
+		</table>
+		</form>
+	</div>
+</body>
+</html>

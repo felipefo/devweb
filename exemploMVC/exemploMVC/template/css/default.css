@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+body
+{
+	margin:0 10;
+	padding:0;
+	border: 0
+}
+
+a:link, a:visited, a:active,a:hover 
+{
+	text-decoration: none;
+	color:#000;
+}
+
+.cab_1
+{
+	background:url("../images/cab_1.jpg") repeat-x;
+	height: 100px;
+	margin-bottom: 15px;	
+}
+
+.RedAlert
+{
+	border: 1px solid #C00;
+	padding: 5px 10px;
+	color: #333;
+	background-color: #FFEBE8;
+	font-family: Verdana,Arial,sans-serif;
+	text-align: center;
+	margin-bottom: 10px; 
+}
+
+.GreenAlert
+{
+	border: 1px solid #0C0;
+	padding: 5px 10px;
+	color: #333;
+	background-color: #EBFFE8;
+	font-family: Verdana,Arial,sans-serif;
+	text-align: center;
+	margin-bottom: 10px; 
+}
+
+.YellowAlert
+{
+	border: 1px solid #CD9B1D;
+	padding: 5px 10px;
+	color: #333;
+	background-color: #FFFACD;
+	font-family: Verdana,Arial,sans-serif;
+	text-align: center;
+	margin-bottom: 10px; 
+}
+
+.table_list , .table_list td
+{
+	border: 1px solid #CCC;
+	margin: 10 10 10 10; /* retira o recuo para alguns browsers */
+	padding: 6 3 6 3; /* retira o recuo para outros browsers */
+	border-collapse: collapse;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+}
+
+.table_list th
+{
+	border-bottom: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	background:url("../images/menu_subtitulo.jpg") repeat-x;
+	height: 16px;
+	padding: 6px 6px;
+	font-weight: bold;
+	
+}
+
+button, .bt_grey, .bt_green, .bt_blue, .bt_red{
+	font:bold 11px "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border:1px solid;
+	vertical-align:middle;
+	padding: 3px 10px;
+	*padding:1px 0px;
+	margin:1px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+button, button.bt_grey, input.bt_grey, .bt_grey {
+	color:#666;
+	cursor:pointer; cursor:hand;
+	background:url("../images/bgButtonGrey2.gif") #F5F5F5;
+	border-color:#AAA;
+	text-shadow:0px 1px 0px #FFF;
+}
+
+button:hover, button:focus, button.bt_grey:hover, button.bt_grey:focus, a.bt_grey:hover, a.bt_grey:focus {
+	background-position: 0px -3px !important;
+	border-color:#666;
+	cursor: pointer;
+}
+
+button.bt_green, input.bt_green, a.bt_green, .bt_green {
+	cursor:pointer; cursor:hand;
+	background:url("../images/bgButtonGreen.jpg") repeat-x scroll left top #009933;
+	border:1px solid #558800;
+	text-shadow:0 -1px 0 #336600;
+	color: #FFF;
+}
+
+button.bt_green:hover, button.bt_green:focus, a.bt_green:hover, a.bt_green:focus{
+	background-position: 0px -3px !important;
+	border-color:#336600;
+	cursor: pointer;
+}
+
+button.bt_red, input.bt_red, a.bt_red, .bt_red{
+	cursor:pointer; cursor:hand;
+	background:url("../images/bgButtonRed.jpg") repeat-x scroll left top #CC0000;
+	border-color:#990000;
+	text-shadow:0 -1px 0 #660000;
+	color:#FFFFFF;
+}
+
+button.bt_red:hover, button.bt_red:focus, a.bt_red:hover, a.bt_red:focus{
+	background-position: 0px -3px !important;
+	border-color:#660000;
+	cursor: pointer;
+}
+
+button.bt_blue, input.bt_blue, a.bt_blue, .bt_blue{
+	cursor:pointer; cursor:hand;
+	background:url("../images/bgButtonBlue.jpg") repeat-x scroll left top #0066CC;
+	border-color:#005588;
+	text-shadow:0 -1px 0 #004477;
+	color:#FFFFFF;
+}
+
+button.bt_blue:hover, button.bt_blue:focus, a.bt_blue:hover, a.bt_blue:focus{
+	background-position: 0px -3px !important;
+	border-color:#003366;
+	cursor: pointer;
+}
+
+tr:nth-child(even) {background: #FFF}
+tr:nth-child(odd) {background: #EEE}	

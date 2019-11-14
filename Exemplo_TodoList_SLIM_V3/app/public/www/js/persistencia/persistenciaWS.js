@@ -6,7 +6,7 @@ function PersistenciaWS(persistencia){
 	_this=this;
 	this.salvar = function(atividade){
         //var uuid = persistencia.getUUID();
-    	$.post( this.domain + "$response",  atividade)
+    	$.post( this.domain + "tasks",  atividade)
     	    .done(function(msg){ 			        				
 			_this.persistencia.lista = (msg);//guardando na lista
 			_this.persistencia.listaListener.notify(msg); //enviando para os observadores  					

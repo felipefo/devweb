@@ -49,13 +49,11 @@ $app->delete('/tasks/[{id}]', function ($request, $response, $args) {
 
 $app->post('/tasks', function ($request, $response) {
     $input = $request->getParsedBody();
-
     $sql = "INSERT INTO task (description, status) VALUES (:description,:status )";
     $sth = $this->db->prepare($sql);
     $sth->bindParam("status", $input['status']);
     $sth->bindParam("description", $input['description']);
     $sth->execute();
-
     $sth = $this->db->prepare("SELECT * FROM task");
     $sth->execute();
     $todos = $sth->fetchAll();

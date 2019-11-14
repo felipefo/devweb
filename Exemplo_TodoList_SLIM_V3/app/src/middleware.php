@@ -13,7 +13,7 @@ $loggedInMiddleware = function ($request, $response, $next) {
     $path  = $uri->getPath(); 
     
     //return $this->response->withJson($_SESSION['USER']);
-    if(strcmp($path, "login") == 0 || isset( $session->get('user'))){
+    if(strcmp($path, "login") == 0 || null !== $session->get('user')){
         $response = $next($request, $response); //cadeia de responsabilidade.        
     }    
     else {

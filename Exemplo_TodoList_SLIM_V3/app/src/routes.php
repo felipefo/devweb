@@ -64,10 +64,13 @@ $app->post('/tasks', function ($request, $response) {
 
 $app->post('/login', function ($request, $response) {
     
-    
-    $_SESSION['USER'] = $todos[0]->email;        
-    $response = $response->withRedirect('/public/www/index.html');
+    $session = new Session();
+    $session->set('user', "felipefo@gmail.com");
+    $response->withRedirect('/public/www/index.html');
     return $response;
+    
+    /*$_SESSION['USER'] = $todos[0]->email;    
+    
     
     $input = $request->getParsedBody();
 
@@ -77,7 +80,7 @@ $app->post('/login', function ($request, $response) {
    /* $options = [
     'cost' => 11,
     'salt' => mcrypt_create_iv(22, MCRYPT_DEV_URANDOM),
-    ];*/
+    ];
     $passwd = password_hash($input['password'], PASSWORD_BCRYPT, $options);    
     $sth->bindParam("password", $input['password']);
     $sth->execute();
@@ -90,6 +93,6 @@ $app->post('/login', function ($request, $response) {
         $app->response->setStatus(400);   
         $app->response->headers->set('Content-Type', 'application/json');    
         return $app->response;
-    }
+    }*/
 });
 

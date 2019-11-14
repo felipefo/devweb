@@ -12,7 +12,7 @@ $loggedInMiddleware = function ($request, $response, $next) {
     $uri = $request->getUri();
     $path  = $uri->getPath(); 
     
-    return $this->response->withJson($_SESSION['USER']);
+    //return $this->response->withJson($_SESSION['USER']);
     if(strcmp($path, "login") == 0 || isset($_SESSION['USER'])){
         $response = $next($request, $response); //cadeia de responsabilidade.        
     }    
@@ -30,6 +30,7 @@ $app->add($loggedInMiddleware);
  //Define app routes
 
  //Show the logged in dashboard page
+
 $app->get('/', function (Slim\Http\Request $request, \Slim\Http\Response $response, $args) {
     // redirect the user to the logged in page.
     $homeController = new HomeController($request, $response, $args);
@@ -42,5 +43,7 @@ $app->get('/login', function (Slim\Http\Request $request, \Slim\Http\Response $r
     $homeController = new HomeController($request, $response, $args);
     return $homeController->index();
 })->setName('login');
+  
+ 
 
 //});

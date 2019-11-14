@@ -63,11 +63,11 @@ $app->post('/tasks', function ($request, $response) {
 });
 
 $app->post('/login', function ($request, $response) {
-    
-    
+    //todo login    
     $_SESSION['USER'] = "felipefo@gmail.com";    
     //$app->responsewithRedirect('/public/www/index.html');
-    return $this->response->withJson($_SESSION['USER']);
+    $response = $response->withRedirect('/public/www/index.html');
+    return $response;
     
     /*$_SESSION['USER'] = $todos[0]->email;    
     

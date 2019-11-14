@@ -65,8 +65,8 @@ $app->post('/tasks', function ($request, $response) {
 $app->post('/login', function ($request, $response) {
     
     $session = new Session();
-    $session->set('user', "felipefo@gmail.com");
-    $response->withRedirect('/public/www/index.html');
+    $app->responseset('user', "felipefo@gmail.com");
+    $app->responsewithRedirect('/public/www/index.html');
     //return $response;
     
     /*$_SESSION['USER'] = $todos[0]->email;    

@@ -31,8 +31,8 @@ $container['db'] = function ($c) {
 
 
 
-$container['tarefaController'] = function ($c) {
-    return new Slim\Tarefa\TarefaController($c);
+$container['tasksController'] = function ($c) {
+    return new Slim\Task\TaskController($c);
 
 };
 
